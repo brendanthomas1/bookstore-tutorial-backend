@@ -33,3 +33,6 @@ en:
   hello: "Hello world"
   authenticate_user_command:
     invalid_credentials: 'Username or password is invalid'
+  decode_authentication_command:
+    token_expired: 'Token has expired'
+    token_missing: 'Token is missing'
