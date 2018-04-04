@@ -15,7 +15,4 @@ test:
   database: bookstore-tutorial-backend_test
 
 production:
-  <<: *default
-  database: bookstore-tutorial-backend_production
-  username: bookstore-tutorial-backend
-  password: <%= ENV['BOOKSTORE-TUTORIAL-BACKEND_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
