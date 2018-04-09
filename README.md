@@ -6,7 +6,7 @@ https://salty-crag-87321.herokuapp.com/
 
 ## Developing locally
 
-[Docker] is used for developing locally
+[Docker](https://docs.docker.com/compose/install/#prerequisites) is used for developing locally
 
 ```bash
 # Leave this running in a terminal window
