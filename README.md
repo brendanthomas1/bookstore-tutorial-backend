@@ -1,26 +1,26 @@
 # README
 
+Heroku production URL:
+
 https://salty-crag-87321.herokuapp.com/
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Developing locally
 
-Things you may want to cover:
+[Docker] is used for developing locally
 
-* Ruby version
+```bash
+# Leave this running in a terminal window
+docker-compose up
 
-* System dependencies
+# bundle gems
+bundle install
 
-* Configuration
+# set up database
+bundle exec rails db:migrate
 
-* Database creation
+# import seed data from Goodreads
+rake import:goodreads
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# start the server
+bundle exec rails s
+```
